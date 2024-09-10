@@ -103,7 +103,7 @@ the <function><cr f="websocket.h">vws_socket_is_connected</cr>()</function> is
 the way to tell if your socket is still connected. Should you receive an error
 or a timeout when attempting to send or receive, you can use this function to
 determine if the connection has been terminated. Finally there is the
-<function><cr f="websocket.h">vws_socket_is_connected</cr>()</function> function
+<function><cr f="websocket.h">vws_disconnect</cr>()</function> function
 which terminates the connection. The connection object can be reused to connect
 to another host. If you are done with it then you must call <function><cr
 f="websocket.h">vws_cnx_free</cr>()</function> to free its memory.</para>
