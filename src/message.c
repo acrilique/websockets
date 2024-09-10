@@ -511,7 +511,7 @@ vws_buffer* vrtql_msg_repr(vrtql_msg* msg)
 void vrtql_msg_dump(vrtql_msg* msg)
 {
     vws_buffer* buffer = vrtql_msg_repr(msg);
-    printf("%.*s\n", buffer->size, buffer->data);
+    printf("%.*s\n", (int) buffer->size, buffer->data);
     vws_buffer_free(buffer);
 }
 

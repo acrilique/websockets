@@ -198,7 +198,7 @@ void vws_trace(vws_log_level_t level, const char* format, ...)
 #if defined(__windows__)
             tid,
 #else
-            (unsigned long)tid,
+            (unsigned int)tid,
 #endif
             level_name,
             ANSI_COLOR_RESET);
